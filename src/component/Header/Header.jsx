@@ -42,9 +42,7 @@ const Header = () => {
             </nav>
 
 
-            {/* url('image_path') */}
-            {/* url('../src/assets/image/banner.png') */}
-            {/* `url(../src/assets/image/banner.png)` */}
+
 
             {/* banner section */}
 
@@ -55,7 +53,7 @@ const Header = () => {
                 <div className="text-center py-40 w-full px-4 lg:w-4/6 md:w-5/6 m-auto">
                     <div className=" ">
                         <h1 className="text-5xl font-bold text-white ">Discover an exceptional cooking  class tailored for you!</h1>
-                        <p  className="text-[16px] text-white py-10" >Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.</p>
+                        <p  className="text-[16px] text-white py-10" > Welcome to everyone in our Recipe Calories. We provide best service all clients. Your chose and we  provide all service timely. So, you can enlist our  Recipe Calories. </p>
                     </div>
                     <div className="">
                         <button className="bg-[#0be58a] text-[#150b2b] py-4 px-6 text-xl font-semibold rounded-full mr-4 mb-5">Explore Now</button>
