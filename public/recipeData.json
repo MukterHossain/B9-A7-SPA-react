@@ -6,7 +6,7 @@
       "preparing_time": 15,
       "short_description":
         "You can chose this food for your health. It has many protains  and calories. It keeps fit your body and mind",
-      "ingredients":  ["4 salmon filter" , "1/4 cup of unsalted butter"],     
+      "ingredients":  ["500g ground beef","1 onion, chopped" , "1/4 cup of unsalted butter", " 2 cloves garlic, minced", "2 raw chili", "25 ml oil"],     
       "Calories":  " 520 calories"     
     },
     {
@@ -16,7 +16,7 @@
       "preparing_time": 20,
       "short_description":
         "It is also delicious food. You can chose this food for your health. It keeps fit your body and mind",
-      "ingredients":  ["4 salmon filter" , "1/4 cup of unsalted butter"],     
+      "ingredients":  ["550g ground beef","1 onion, chopped" , "1/5 cup of unsalted butter", " 3 cloves garlic, minced", "2 raw chili", "20 ml oil"],     
       "Calories":  " 450 calories"     
     },
     {
@@ -26,7 +26,7 @@
       "preparing_time": 30,
       "short_description":
         "Chicken steak is also delicious food. You can chose this food for your health. It keeps fit your body and mind",
-      "ingredients":  ["4 salmon filter" , "1/4 cup of unsalted butter"],     
+      "ingredients":  ["4 salmon filter" ,"2 onion, chopped" , "1/2 cup of unsalted meet", " 2 cloves garlic, minced", "2 raw chili", "25 ml oil"],     
       "Calories":  " 658 calories"     
     },
     {
@@ -36,7 +36,7 @@
       "preparing_time": 40,
       "short_description":
         "Buffalo wing is also delicious food. You can chose this food for your health. It keeps fit your body and mind",
-      "ingredients":  ["4 salmon filter" , "1/4 cup of unsalted butter"],     
+      "ingredients":  ["400g ground beef","2 bread, chopped" , "1/3 cup of unsalted curt", " 3 cloves garlic, minced", "1 raw chili", "250 ml milk"],     
       "Calories":  "800 calories"     
     },
     {
@@ -46,7 +46,7 @@
       "preparing_time": 30,
       "short_description":
         "Chicken nuggets is also delicious  and good food. You can chose this food for your health. It keeps fit your body and mind",
-      "ingredients":  ["4 salmon filter" , "1/4 cup of unsalted butter"],     
+      "ingredients":  ["480g ground beef","2 onion, chopped" , "1/4 cup of unsalted butter", " 3 cloves garlic, minced", "5 raw chili", "40 ml oil"],     
       "Calories":  " 500 calories"     
     },
     {
@@ -56,7 +56,7 @@
       "preparing_time": 30,
       "short_description":
         "Seafood with vegetable are also delicious food. You can chose this food for your health. It keeps fit your body and mind",
-      "ingredients":  ["4 salmon filter" , "1/4 cup of unsalted butter"],     
+      "ingredients":  ["510g ground beef", "3 onion, chopped" , "1/5 cup of unsalted butter", " 5 cloves garlic, minced", "10 raw chili", "100 ml oil"],     
       "Calories":  "620 calories"     
     }
   ]

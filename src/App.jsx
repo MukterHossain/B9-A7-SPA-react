@@ -8,6 +8,7 @@ import Recipe from './component/Recipe/Recipe'
 function App() {
 
   const [foods, setFood] = useState([]);
+  const [cardData, setCardData] = useState([]);
 
   useEffect(() =>{
     fetch("./recipeData.json")
@@ -15,6 +16,16 @@ function App() {
     .then(data => setFood(data))
   }, [])
   // console.log(typeof foods)
+  const handleCard = (card) =>{
+    const isExist = cardData.find(cards=>cards.recipe_id == card.recipe_id)
+    if(!isExist){
+      setCardData([...cardData, card])
+    }
+    else{
+      alert('already in card')
+    }
+  }
+  console.log(cardData)
 
 
   return (
@@ -37,12 +48,12 @@ function App() {
       </div> 
   </div >
 
-<div className="flex justify-between">
-      <div id='recipe-container' className='w-3/5 my-10'>
+<div className="flex justify-between my-10 gap-5">
+      <div id='recipe-container' className='w-3/5 '>
         <div  className='grid lg:grid-cols-2 gap-6'>
             {
                 foods.map((food, recipe_id) =>(
-                <Recipe key={recipe_id} food={food}></Recipe>
+                <Recipe key={recipe_id} handleCard={handleCard} food={food}></Recipe>
                 ))
             }
         </div>
