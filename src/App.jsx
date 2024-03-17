@@ -66,7 +66,7 @@ function App() {
        {/* View section */}
        <div className="w-2/5  border-gray-200 shadow-gray-300 shadow-xl  border-2 p-5 rounded-2xl">
           <div className="">
-              <h1 className="text-2xl text-[#282828] text-center font-semibold pb-2">Want to cook: {0}</h1>
+              <h1 className="text-2xl text-[#282828] text-center font-semibold pb-2">Want to cook: {cardData.length}</h1>
           </div>
           <hr />
           <div className=" flex justify-around p-2 ">
@@ -92,7 +92,7 @@ function App() {
           {/* Card bottom */}
           <div>
           <div className="mt-10">
-              <h1 className="text-2xl text-[#282828] text-center font-semibold pb-2">Currently cooking:{0}</h1>
+              <h1 className="text-2xl text-[#282828] text-center font-semibold pb-2">Currently cooking:{cook.length}</h1>
           </div>
           <hr />
           <div className=" flex justify-around p-2 ">
@@ -119,13 +119,7 @@ function App() {
         </div>
     </div>  
 
-
-
-
-
 </div>
-
-      
 
     </>
   )
