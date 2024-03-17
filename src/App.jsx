@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './component/Header/Header'
 import Recipe from './component/Recipe/Recipe' 
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -22,10 +24,18 @@ function App() {
       setCardData([...cardData, card])
     }
     else{
-      alert('already in card')
+      toast("Already it exist");
     }
   }
-  console.log(cardData)
+
+
+  const handleDelete = (id)=>{
+     const newCard = cardData.filter(item =>item.recipe_id !=id);
+     setCardData(newCard)
+  }
+ 
+
+
 
 
   return (
@@ -63,7 +73,7 @@ function App() {
        {/* View section */}
        <div className="w-2/5  border-gray-200 shadow-gray-300 shadow-xl  border-2 p-5 rounded-2xl">
           <div className="">
-              <h1 className="text-2xl text-[#282828] text-center font-semibold pb-3">Want to cook: 01</h1>
+              <h1 className="text-2xl text-[#282828] text-center font-semibold pb-3">Want to cook: {0}</h1>
           </div>
           <hr />
           <div className=" flex justify-around p-5  ">
@@ -73,13 +83,14 @@ function App() {
           </div>
           <div>
             {
-              cardData.map((item) =>(
+              cardData.map((item, index) =>(
                 <div className='card-info'>
-                  <p>{item.recipe_id}</p>
-                  <p>{item.recipe_name}</p>
+                  <p>{index+1}</p>
+                  <p>{item.recipe_name.slice(0, 10)}</p>
                   <p>{item.preparing_time} minute</p>
                   <p>{item.Calories}</p>
-                  <button>Preparing</button>
+                  <button onClick={()=>handleDelete(item.recipe_id)}>Preparing</button>
+                  <ToastContainer></ToastContainer>
                 </div>
               ))
             }
