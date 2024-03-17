@@ -40,7 +40,7 @@ const Recipe = ({food, handleCard}) => {
                         <p> {Calories}</p>
                     </div>                               
                 </div>
-                <button onClick={()=>handleCard(food)} className="bg-[#0be58a] rounded-full py-2 mb-3 px-5 text-[18px] hover:bg-gray-300 font-semibold text-[#150b2b]">Want to Cook</button>
+                <button  onClick={()=>handleCard(food) } className="bg-[#0be58a] rounded-xl py-2 mb-3 px-5 text-[18px] hover:bg-gray-300 font-semibold text-[#150b2b]">Want to Cook</button>
             </div>                                   
         </div>
     );

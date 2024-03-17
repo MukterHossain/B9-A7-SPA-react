@@ -1,14 +1,15 @@
 
 .card-info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+    gap: 5px;
     margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
     background:rgba(128, 128, 128, 0.161);
     padding: 5px;
     border-radius: 10px;
 }
+
 .card-info p{
     color:#282828;
     font-size: 16px;
@@ -16,6 +17,7 @@
     opacity: .7;   
 }
 .card-info button{
+    width: 100px;
     background: #0be58a;
     padding: 5px 10px;
     border-radius: 25px;
@@ -24,7 +26,39 @@
     background: rgba(128, 128, 128, 0.463);
 }
 
+.card-info-bottom{
 
+    gap: 5px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    background:rgba(128, 128, 128, 0.161);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+@media screen and  (max-width:600px){
+    .card-info{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+
+    } 
+    .card-info-bottom{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+    }
+}
 /* https://i.ibb.co/yVTWpz6/food7.jpg
 https://i.ibb.co/6YZJbvP/food8.jpg
 https://i.ibb.co/DYPVTbV/banner.png */
