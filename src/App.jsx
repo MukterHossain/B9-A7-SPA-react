@@ -61,9 +61,28 @@ function App() {
       </div>
 
        {/* View section */}
-       <div className="w-2/5">
-          <div className=" border-gray-200 shadow-gray-300 shadow-xl  border-2 p-5 rounded-2xl">
-              <h1>view section</h1>
+       <div className="w-2/5  border-gray-200 shadow-gray-300 shadow-xl  border-2 p-5 rounded-2xl">
+          <div className="">
+              <h1 className="text-2xl text-[#282828] text-center font-semibold pb-3">Want to cook: 01</h1>
+          </div>
+          <hr />
+          <div className=" flex justify-around p-5  ">
+            <h3 className="text-[16px] text-[#282828] font-medium opacity-70">Name</h3>
+            <h3 className="text-[16px] text-[#282828] font-medium opacity-70">Time</h3>
+            <h3 className="text-[16px] text-[#282828] font-medium opacity-70">Calories</h3>
+          </div>
+          <div>
+            {
+              cardData.map((item) =>(
+                <div className='card-info'>
+                  <p>{item.recipe_id}</p>
+                  <p>{item.recipe_name}</p>
+                  <p>{item.preparing_time} minute</p>
+                  <p>{item.Calories}</p>
+                  <button>Preparing</button>
+                </div>
+              ))
+            }
           </div>
         </div>
     </div>  

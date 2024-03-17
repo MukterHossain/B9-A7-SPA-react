@@ -1,12 +1,28 @@
 
-/* #recipe-container{
+.card-info{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap:20px;
-    
-} */
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    background:rgba(128, 128, 128, 0.161);
+    padding: 5px;
+    border-radius: 10px;
+}
+.card-info p{
+    color:#282828;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: .7;   
+}
+.card-info button{
+    background: #0be58a;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.card-info button:hover{
+    background: rgba(128, 128, 128, 0.463);
+}
 
 
 /* https://i.ibb.co/yVTWpz6/food7.jpg
